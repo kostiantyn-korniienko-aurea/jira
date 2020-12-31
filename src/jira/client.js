@@ -13,7 +13,7 @@ export const getClientInstance = jiraSubdomain => {
       const url = `${buildBaseURL(jiraSubdomain)}${path}`;
       const headers = new Headers({
         'Content-Type': 'application/json',
-        'Origin': `https://${jiraSubdomain}.atlassian.net`,
+        'Origin': `https://jira.devfactory.com`,
         'User-Agent': 'jira/extension/2.0'
       });
 
@@ -26,7 +26,7 @@ export const getClientInstance = jiraSubdomain => {
     },
 
     issueURL(key) {
-      return `https://${jiraSubdomain}.atlassian.net/browse/${key}`;
+      return `https://jira.devfactory.com/browse/${key}`;
     }
 
   }

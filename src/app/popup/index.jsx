@@ -8,7 +8,7 @@ import './styles.scss';
 import JiraIssues from '../jira-issues';
 
 const undoneAssignedIssuesURL = ({ jiraSubdomain }) =>
-  `https://${jiraSubdomain}.atlassian.net/rest/api/2/search?fields=summary,status&jql=` +
+  `https://jira.devfactory.com/rest/api/2/search?fields=summary,status&jql=` +
   encodeURIComponent(
     `assignee=currentuser() AND status!="Done" ORDER BY updated DESC`
   );

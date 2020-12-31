@@ -120,12 +120,12 @@ export default chrome => {
         let url;
         switch (type) {
           case 'issue': {
-            url = `https://${jiraSubdomain}.atlassian.net/browse/${text}`;
+            url = `https://jira.devfactory.com/browse/${text}`;
             break;
           }
 
           case 'project': {
-            url = `https://${jiraSubdomain}.atlassian.net/projects/${text}`;
+            url = `https://jira.devfactory.com/projects/${text}`;
             break;
           }
 

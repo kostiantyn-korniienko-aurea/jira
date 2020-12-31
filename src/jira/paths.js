@@ -11,7 +11,7 @@ const buildQuery = options =>
     .join('&')
 
 export const buildBaseURL = subdomain =>
-  `https://${subdomain}.${JIRA_DOMAIN}`;
+  `https://${JIRA_DOMAIN}`;
 
 export const apiSearchIssuesPath = (text, { fields = 'summary,status', maxResults = 10 } = {}) =>
   `/rest/api/2/search/?${buildQuery({ fields, maxResults, jql: textSearchQueryComponent(text) })}`;

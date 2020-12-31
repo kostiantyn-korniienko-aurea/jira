@@ -12,7 +12,7 @@ const validationMessages = {
   goodNoCookie:
     'Did not detect a cookie for this subdomain. Check for typos or you might not be logged in to Jira.',
   bad:
-    'The subdomain is invalid. If the organization URL is acme.atlassian.net, only enter acme.',
+    'The subdomain is invalid. If the organization URL is jira.devfactory.com, only enter jira.',
   blank: 'Please enter your Jira subdomain'
 };
 

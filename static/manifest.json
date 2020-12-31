@@ -27,7 +27,7 @@
     "scripts": ["background.js"],
     "persistent": true
   },
-  "permissions": ["cookies", "storage", "https://*.atlassian.net/"],
+  "permissions": ["cookies", "storage", "https://jira.devfactory.com/"],
   "optional_permissions": ["tabs", "*://*/*"],
   "browser_specific_settings": {
     "gecko": {

@@ -1,7 +1,7 @@
 import React from 'react';
 
 const issueURL = ({ jiraSubdomain, key }) =>
-  `https://${jiraSubdomain}.atlassian.net/browse/${key}`;
+  `https://jira.devfactory.com/browse/${key}`;
 
 const IssueItem = ({ issue, onClick, jiraSubdomain }) => {
   return (

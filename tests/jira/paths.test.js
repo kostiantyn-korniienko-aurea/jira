@@ -13,7 +13,7 @@ test('buildHelper returns a URL helper function from the subdomain and a path he
   const pathHelper = (id) => `/issues/${id}`
   const URLHelper = buildHelper('jira', pathHelper);
 
-  t.equal(URLHelper(13), 'https://jira.atlassian.net/issues/13');
+  t.equal(URLHelper(13), 'https://jira.devfactory.com/issues/13');
 });
 
 test('apiIssuePath returns issues/:key given a key', t => {
